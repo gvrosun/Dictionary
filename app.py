@@ -47,12 +47,12 @@ class Dictionary:
 
             possibilities.append('None of the above')
             cprint(f'[*] {word}', 'yellow', end="")
-            print(" "*20)
+            print(" "*50)
 
             # Printing possible words to enable user to choose one...
             for index, item in enumerate(possibilities):
                 cprint(f'{index}. {item}', attrs=['dark'], end="")
-                print(" "*20)
+                print(" "*50)
 
             # Getting input and cleaning
             print(f'Please select correct word (default: {possibilities[0]}): ', end="")
@@ -76,7 +76,7 @@ class Dictionary:
             # Else print meaning of the word.
             else:
                 cprint(f'[+] {choice_word.capitalize()}', color='green', end="")
-                print(" "*20)
+                print(" "*50)
                 meaning = self.data.get(choice_word)
 
                 for item in meaning:
