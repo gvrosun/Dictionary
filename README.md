@@ -1,2 +1,2 @@
 # Dictionary
-To find meaning for words
+To find spelling as well as meaning of any words
